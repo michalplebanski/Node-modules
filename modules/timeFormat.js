@@ -4,7 +4,7 @@ function changeTime(time) {
 	time %= 3600;
 
 	var minutes = Math.floor(time / 60);
-	var seconds = (time % 60).toFixed(0);
+	var seconds = Math.floor(time % 60);
 
 	return hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds';
 }
